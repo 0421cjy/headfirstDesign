@@ -1,4 +1,4 @@
-package chapter1;
+package Strategy;
 
 public abstract class Duck {
 	
@@ -19,6 +19,16 @@ public abstract class Duck {
 	public void performQuack()
 	{
 		quackBehavior.quack();
+	}
+	
+	public void setFlyBehavior(FlyBehavior fb)
+	{
+		flyBehavior = fb;
+	}
+	
+	public void setQuackBehavior(QuackBehavior qb)
+	{
+		quackBehavior = qb;
 	}
 	
 	public void swim()
