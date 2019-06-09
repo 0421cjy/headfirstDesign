@@ -20,5 +20,9 @@ public class Mocha extends CondimentDecorator {
 		// TODO Auto-generated method stub
 		return .20 + beverage.cost();
 	}
+	
+	public String getName() {
+		return "Moca";
+	}
 
 }
